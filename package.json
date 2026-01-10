@@ -59,5 +59,10 @@
     "jsdom": "^27.1.0",
     "typescript": "~5.9.2",
     "vitest": "^4.0.8"
-  }
+  },
+  "scripts": {
+  "build": "next build",
+  "start": "next start"
+}
+  
 }
