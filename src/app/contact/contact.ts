@@ -1,5 +1,4 @@
 import { Component,ViewChild,ElementRef  } from '@angular/core';
-import { MatIconModule } from '@angular/material/icon';
 import {  CommonModule } from '@angular/common';
 import emailjs from '@emailjs/browser';
 import { NgForm } from '@angular/forms';
@@ -9,7 +8,7 @@ declare const bootstrap: any;
 
 @Component({
   selector: 'app-contact',
-  imports: [MatIconModule, CommonModule,FormsModule
+  imports: [ CommonModule,FormsModule
 ],
   templateUrl: './contact.html',
   styleUrl: './contact.css',
