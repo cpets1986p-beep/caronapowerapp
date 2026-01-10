@@ -1,0 +1,183 @@
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top"
+     [ngClass]="{ 'scrolled': isScrolled }">
+  <div class="container-fluid">
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="assets/images/Carona_Logo.jpeg" alt="Carona Power" width="70" class="me-2">
+      <span class="fw-bold text-white">
+        {{ 'Carona Power Electrical Test Systems' | capitalizeFirst }}
+      </span>
+    </a>
+
+    <!-- Toggler -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Nav Links -->
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav ms-auto mb-4 mb-lg-0">
+        <li class="nav-item mx-3"><a class="nav-link" [routerLink]="['home']" routerLinkActive="active">Home</a></li>
+        <li class="nav-item mx-3"><a class="nav-link" [routerLink]="['overview']" routerLinkActive="active">Overview</a></li>
+
+        <!-- Products Dropdown -->
+       <li class="nav-item dropdown">
+  <a class="nav-link mx-3 dropdown-toggle"  [routerLink]="['/products']" routerLinkActive="active"
+ id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" [routerLinkActiveOptions]="{ exact: false }">
+    Products
+  </a>
+  <ul class="dropdown-menu mx-3" aria-labelledby="productsDropdown">
+    <li><a class="dropdown-item" [routerLink]="['impulse-resistor']" routerLinkActive="active">Impulse Resistors</a></li>
+    <li><a class="dropdown-item" [routerLink]="['impulse-inductor']" routerLinkActive="active">Impulse Inductors</a></li>
+    <li><a class="dropdown-item" [routerLink]="['/products/generator-spares']" routerLinkActive="active">Impulse Generator Spares</a></li>
+    <li><a class="dropdown-item" [routerLink]="['/products/pd-rooms']" routerLinkActive="active">PD Rooms</a></li>
+  </ul>
+</li>
+
+
+        <!-- Services Dropdown -->
+        <li class="nav-item dropdown mx-3">
+          <a class="nav-link dropdown-toggle" [routerLink]="['/services']" id="servicesDropdown" aria-expanded="false" role="button" data-bs-toggle="dropdown" [routerLinkActiveOptions]="{ exact: false }" routerLinkActive="active">
+            Services
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLinkActive="active" routerLink="['/services/repair']">Repair</a></li>
+            <li><a class="dropdown-item" routerLinkActive="active" routerLink="['/services/hv']">HV Laboratory Planning</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item mx-3"><a class="nav-link" [routerLink]="['contact']" routerLinkActive="active">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- <div class="flex flex-nowrap">
+<mat-toolbar class="mat-card-logo">
+    <span >
+    <img class="logo" mat-card-image src="assets/images/Carona_Logo_Trans.png" alt="Carona Power" width="70">  
+    </span>
+    <span class="spacer-one"></span>
+    <div class="header-title">
+    <span class="app-title">
+    {{ 'Carona Power Electrical Test Systems' | capitalizeFirst }}    
+    </span>
+    </div>   
+    <span class="spacer-one"></span> 
+     <span class="spacer"></span>
+    <div>
+    <div>
+      <mat-icon class="icon" svgIcon="phone"></mat-icon>
+  <span class="text-call"> +91 9965523421</span></div>
+    <div>
+      <mat-icon class="icon" svgIcon="email"></mat-icon>
+  <span class="text-call"> enquiries@caronapower.com</span></div>
+  </div>
+  </mat-toolbar>
+  </div>
+  <mat-toolbar class="mat-card-header">
+     <mat-nav-list class="list-horizontal" >
+    <a mat-list-item  [routerLink]="['home']" >
+      <span class="label-span">Home</span></a>
+  </mat-nav-list>
+  <mat-nav-list class="list-horizontal">
+    <a mat-list-item  [routerLink]="['overview']" >
+      <span class="label-span">Overview</span></a>
+  </mat-nav-list>
+  <mat-nav-list class="list-horizontal">
+    <a mat-list-item [matMenuTriggerFor]="products">
+      <span class="label-span">Products</span></a>
+    <mat-menu #products="matMenu">
+    <a mat-menu-item routerLink="['products']"><span class="label-mid-span">Impulse Resistors</span></a>
+    <a mat-menu-item routerLink="/app-products"><span class="label-mid-span">Impulse Inductors</span></a>
+<a mat-menu-item routerLink="/app-products"><span class="label-mid-span">Impulse Generator Spares</span></a>
+ <a mat-menu-item routerLink="/app-products"><span class="label-mid-span">PD Rooms
+</span></a>
+</mat-menu>
+  </mat-nav-list>
+
+  <mat-nav-list class="list-horizontal">
+    <a mat-list-item [matMenuTriggerFor]="services"  routerLink="/app-services">
+      <span class="label-span">Services</span></a>
+    <mat-menu #services="matMenu">
+    <a mat-menu-item routerLink="/app-services"><span class="label-mid-span">Repair</span></a>
+    <a mat-menu-item routerLink="/app-services"><span class="label-mid-span">HV Laboratory Planning
+</span></a>
+ 
+</mat-menu>
+  </mat-nav-list>
+  <mat-nav-list class="list-horizontal">
+    <a mat-list-item  [routerLink]="['clients']" ><span class="label-span">Clients</span></a>
+  </mat-nav-list> 
+  <mat-nav-list class="list-horizontal" >
+    <a mat-list-item  [routerLink]="['contact']"  routerLinkActive="active-link"><span class="label-span">Contact Us</span></a>
+  </mat-nav-list>
+  </mat-toolbar> --> 
+  <!-- <div *ngIf="showHeader">
+    <app-home></app-home>
+    <app-overview></app-overview>
+    <app-products></app-products>
+    <app-services></app-services>
+    <app-clients></app-clients> 
+    <app-contact></app-contact>
+    <app-footer></app-footer>
+  </div> -->
+ <!-- <div >
+<mat-card class="mat-card">
+   Use the correct path relative to the output directory -->
+  
+  <!-- <mat-card-content class="mat-card-content-cs">
+   <div>
+    <div class="content">  
+    
+    <h2>Carona Power Electrical Test System</h2>  
+</div>
+   </div>
+  </mat-card-content>
+</mat-card>
+</div> --> 
+<!-- 
+<mat-toolbar class="mat-card" color="primary">
+ 
+  <img mat-card-image class="logo" src="assets/images/Carona_Logo.jpeg" alt="Angular Logo" width="100">
+  <span class="mat-card-content-cs">CaronaPower</span>
+
+  Spacer 
+  <span class="spacer"></span>
+
+   Menu Items 
+  <button mat-button  class="custom-btn" routerLink="/">Home</button>
+  <button mat-button  routerLink="/overview">Overview</button>
+  <button mat-button  routerLink="/products">Products</button>
+  <button mat-button routerLink="/applications">Applications</button>
+  <button mat-button  routerLink="/contact">Contact Us</button> -->
+  <!-- Dropdown Menu -->
+  <!-- <mat-menu #appMenu="matMenu">
+    <button mat-menu-item routerLink="/profile">Profile</button>
+    <button mat-menu-item routerLink="/settings">Settings</button>
+  </mat-menu>
+<span class="spacer"></span>
+  
+  <a  mat-button  class="custom-btn custom-btn:hover">Home</a>
+  
+  <a mat-button  class="custom-btn custom-btn:hover">Overview</a>
+  <a mat-button class="custom-btn custom-btn:hover">Products</a>
+  <a mat-button class="custom-btn custom-btn:hover">Services</a>
+  <a mat-button class="custom-btn custom-btn:hover">Contact</a>
+  <mat-menu #appMenu="matMenu">
+    <button mat-menu-item  routerLink="/profile">Our Clients</button>
+    <button mat-menu-item  routerLink="/settings">Settings</button>
+  </mat-menu>
+  <button mat-button style="color:white;margin-top: 45px;padding: 20px;font-weight: bold;font-size: 15px; "  class="custom-btn:hover" [matMenuTriggerFor]="appMenu">More</button> 
+  <span class="spacer"></span>
+  <div>
+    <div>
+      <mat-icon class="icon" svgIcon="phone"></mat-icon>
+  <span class="text-call"> +91 9965523421</span></div>
+    <div>
+      <mat-icon class="icon" svgIcon="email"></mat-icon>
+  <span class="text-call"> enquiries@caronapower.com</span></div>
+  </div>
+  <button mat-button [matMenuTriggerFor]="appMenu">More</button> -->
+<!-- </mat-toolbar> --> 

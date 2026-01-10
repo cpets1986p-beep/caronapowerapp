@@ -1,0 +1,52 @@
+.mat-card-header {
+  max-width: 100%;
+  margin: 5px auto;
+  height: 5px;
+  padding: 5px;
+  background-color:#014164;
+  display: flex; 
+  
+}
+.spacer-one {
+  flex: 1 0 ;
+}
+ .text-call {
+  font-weight: bold;
+  font-size: 15px;
+  color: #f8f9fa
+}
+.footer a:hover {
+  color: #ffcc00 !important;
+  text-decoration: underline;
+}
+.body{
+  padding-top:100px;
+  margin:15px;
+}
+
+.underline-animate {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-animate::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #ffcc00;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.underline-animate:hover::after {
+  transform: scaleX(1);
+}
+
+.mat-card-header-logo {
+  padding: 10px 0;
+  background-color: #014164; /* dark blue */
+}

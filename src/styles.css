@@ -1,0 +1,38 @@
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { color: #014164; margin: 0; font-family: 'Roboto', sans-serif; }
+
+
+mat-nav-list.list-horizontal {
+  padding: 20;  
+  margin-right: 50px;
+  .mat-list-item,mat-menu-item {
+    display: inline-block;
+    height: auto;
+    width: auto;
+    color:#f3f8f2;
+    font-weight: bold;
+    text-decoration: #014164;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;;
+  }
+}
+.mat-mdc-menu-content {
+  padding: 0px;
+  align-items: left;
+  border-radius: 8px;
+}
+
+.mat-nav-list.list-horizontal .mat-list-item :hover {
+  background-color: #800885; /* highlight color on hover */
+  color: #000000;
+  border-radius: 4px;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

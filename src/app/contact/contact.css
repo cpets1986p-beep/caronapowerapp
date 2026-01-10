@@ -1,0 +1,159 @@
+
+.mat-card-header {
+  max-width: 100%;
+  margin: 5px auto;
+  height: 50px;
+  padding: 0px;
+  background-color:#014164;
+  display: flex; 
+}
+.spacer-one {
+  flex: 1 0 ;
+}
+.spacer-two {
+  flex: 2 0 ;
+}
+.icon {
+  width: 20px;   /* sets width */
+  height: 20px;  /* sets height */
+  color:#fafafa;
+ }
+ .text-call {
+  font-weight: bold;
+  font-size: 15px;
+  color: #f8f9fa
+}
+.hero-section {
+  background-color:whitesmoke;
+  padding: 40px 20px;
+  border-radius: 0px;
+  text-align: left;
+  margin: 0px;
+}
+
+.hero-text{
+  color: #014164;
+  font-size: 20px;
+  margin-top: 10px;
+  align-items: center;
+}
+.ng-container-left {
+  margin: 0px;
+  align-items: Left ;
+}
+.overview-text {
+  text-align: justify;
+  font-size: 15px;
+  color: #014164;
+  
+}.overview-shape {
+  font-weight: bold;
+  font-size: 15px;
+  color: #014164;
+  align-items: left;
+}
+.ng-container-right {
+  margin: 0px;
+  align-items: right ;
+}
+.contact-section {
+  background-color: rgb(243, 235, 235);
+  padding: 40px 20px;
+  border-radius: 0px;
+  margin: 0px;
+}
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #014164;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #014164;
+  font-size: 15px;
+}
+
+.body{
+  padding-top:100px;
+  margin:15px;
+}
+
+.form-container {
+  max-width: 85%;
+  /* margin: 40px auto; */
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.form-button {
+  width: 100%;
+  padding: 14px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+  background-color: #0056b3;
+}
+
+.center-toast {
+  position: fixed;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  z-index: 1060;
+  padding: 1rem;
+}
+
+.contact-left {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+}
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 20px;
+}
+.contact-right {
+  flex: 1;
+  min-width: 300px;
+  text-align: right;
+}
+.contact-map {
+  flex: 1;
+  min-width:300px;
+  border-radius: 12px;
+  border: 10px;;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}

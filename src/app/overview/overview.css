@@ -1,0 +1,79 @@
+.hero-section {
+  background-color: white;
+  padding: 40px 20px;
+  border-radius: 0px;
+  text-align: center;
+  margin: 20px;
+}
+.ng-container {
+  margin: 0px;
+}
+.hero-text{
+  color: #014164;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.about-section {
+  background-color: whitesmoke;
+  padding: 40px 20px;
+  border-radius: 0px;
+  margin: 0px;
+}
+.overview-shape {
+  float: left; /* Must be a floated element */
+  width: 100%;
+  height: auto;
+  /* Optional: style the shape itself background-color: #f0f0f0; */
+  /* Text wraps around a circle shape-outside: circle(50%); */
+  /* Optional: make the shape visible as a circleborder-radius: 50%;  */
+  margin-right: 15px;
+}
+.overview-text {
+  text-align: justify;
+  font-size: 15px;
+  color: black;;
+  
+}
+
+.md-content {
+  padding: 24px; }
+
+   .box {         
+            color:white;
+            padding:10px;
+            text-align:center;
+            border-style: inset;
+            width:fit-content;
+            height:25vp;
+         }
+         .green {
+            background:green;
+         }
+         
+         .blue {
+            background:blue;
+         }
+
+         .background-container {
+  height: 30vh; /* Sets height to full viewport height */
+  background-image: url('/assets/images/bg2.jfif'); /* Adjust path as needed */
+  background-size: cover; /* Ensures the image covers the entire area */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents image from repeating */
+  /* Add other styles like padding, margin, etc. */
+}
+
+ .text-call {
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: #f8f9fa;
+  padding: 10px;
+  text-align: center;
+  width: 98%;
+}
+
+.body{
+  padding-top:100px;
+  margin:15px;
+}

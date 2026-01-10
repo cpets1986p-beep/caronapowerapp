@@ -1,0 +1,89 @@
+:root{
+	--header-bg: #ffffff;
+	--header-border: #e6e6e6;
+	--accent: #ff3b30;
+	--text: #111827;
+}
+
+.site-header{
+	width:100%;
+	background:var(--header-bg);
+	border-bottom:1px solid var(--header-border);
+	position:sticky;
+	top:0;
+	z-index:50;
+}
+.site-header .container{
+	max-width:1100px;
+	margin:0 auto;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	padding:0.6rem 1rem;
+}
+.logo{
+	font-weight:700;
+	font-size:1.125rem;
+	color:var(--text);
+	text-decoration:none;
+}
+.nav{
+	display:flex;
+	align-items:center;
+	gap:1rem;
+}
+.nav-links{
+	list-style:none;
+	display:flex;
+	gap:1rem;
+	margin:0;
+	padding:0;
+}
+.nav-links a{
+	color:var(--text);
+	text-decoration:none;
+	padding:0.4rem 0.6rem;
+	border-radius:6px;
+}
+.nav-links a:hover{ background: color-mix(in srgb, var(--accent) 8%, transparent); }
+.nav-toggle{
+	display:none;
+	background:transparent;
+	border:0;
+	font-size:1.25rem;
+	cursor:pointer;
+}
+
+@media (max-width:700px){
+	.nav-links{ display:none; }
+	.nav-toggle{ display:inline-flex; }
+}
+
+/* minor spacing adjustment for existing main */
+.main{ padding-top:0.5rem; }
+.body{
+	background: #1E1E2B;
+    color: white;
+    --smart-background: #27293D;
+    --smart-border: #27293D;
+    --smart-background-color: whtie;
+    --smart-ui-state-border-hover: #41B883;
+    --smart-ui-state-border-active: #41B883;
+    --smart-ui-state-border-focus: #41B883;
+    --smart-outline: #41B883;
+}
+.site-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+   /* Ensures the container takes at least the full height of the viewport */
+}
+
+.content-wrap {
+  flex: 0 0 auto; /* This makes the content area grow to fill available space */
+}
+
+/* Optional: additional styling for the router-outlet itself */
+.router-outlet {
+  display: block; /* Ensure it behaves as a block element for layout purposes */
+}

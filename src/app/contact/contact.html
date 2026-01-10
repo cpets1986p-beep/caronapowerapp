@@ -1,0 +1,126 @@
+
+<div class="body">
+
+
+<section class="ng-container hero-section">
+    <div >    
+    <div class="hero-text">
+    <h2>CONTACT US</h2>
+    <h3>Carona Power Electrical Test Systems</h3>
+    <h6>
+     <b> High Voltage Impulse Generator Support – Bangalore, India </b>
+      <br/>            
+    </h6>
+    </div>
+    <hr/>
+    <div class="row g-0">
+   
+    <div class="col">
+      <div class="form-container">
+  <form #contactForm="ngForm" (ngSubmit)="sendEmail(contactForm)">
+    
+    <input
+      type="text"
+      id="fname"
+      name="fname"
+      ngModel
+      placeholder="First Name"
+      class="form-input"
+      required
+      #fnameRef="ngModel"
+    />
+    <div *ngIf="fnameRef.invalid && fnameRef.touched" class="text-danger">
+      <small>First name is required.</small>
+    </div>
+
+    <input
+      type="text"
+      id="lname"
+      name="lname"
+      ngModel
+      placeholder="Last Name"
+      class="form-input"
+      required
+      #lnameRef="ngModel"
+    />
+    <div *ngIf="lnameRef.invalid && lnameRef.touched" class="text-danger">
+      <small>Last name is required.</small>
+    </div>
+
+    <input
+      type="email"
+      id="email"
+      name="email"
+      ngModel
+      placeholder="Email"
+      class="form-input"
+      required
+      email
+      #emailRef="ngModel"
+    />
+    <div *ngIf="emailRef.invalid && emailRef.touched" class="text-danger">
+      <small *ngIf="emailRef.errors?.['required']">Email is required.</small>
+      <small *ngIf="emailRef.errors?.['email']">Enter a valid email address.</small>
+    </div>
+
+    <textarea
+      id="subject"
+      name="subject"
+      ngModel
+      placeholder="Your message..."
+      class="form-textarea"
+      required
+      #subjectRef="ngModel"
+    ></textarea>
+    <div *ngIf="subjectRef.invalid && subjectRef.touched" class="text-danger">
+      <small>Message is required.</small>
+    </div>
+
+    <button type="submit" class="form-button" [disabled]="contactForm.invalid">
+      Submit
+    </button>
+  </form>
+</div>
+</div>
+<div class="col">
+  <div class="contact-map">
+<iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.123456789!2d77.5946!3d12.9716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670abcd123%3A0x123456789abcdef!2sBengaluru%2C%20India!5e0!3m2!1sen!2sin!4v1700000000000"
+          width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+
+  </div>
+</div>
+</div>
+<!-- Toast -->
+<div class="toast-container center-toast">
+  <div class="toast align-items-center text-bg-success border-0" role="alert" #toastRef>
+    <div class="d-flex">
+      <div class="toast-body">Message sent successfully!</div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+    </div>
+  </div>
+</div>
+
+    
+    </div>
+
+</section>
+</div>
+  
+<!-- <mat-toolbar class="mat-card-header">
+             <div>
+      <mat-icon class="icon" svgIcon="location"></mat-icon>
+  <span class="text-call"> Bangalore, India</span></div>
+  <span class="spacer-one"></span>
+             <div>
+                <a href="mailto:enquiries@caronapower.com"><mat-icon class="icon" svgIcon="email"></mat-icon></a>
+                <span class="text-call">Email: enquiries@caronapower.com</span>
+             </div>
+             <span class="spacer-one"></span>
+             <div>
+                <a href="tel:+91 9965523421"><mat-icon class="icon" svgIcon="phone"></mat-icon></a>
+                <span class="text-call"> Phone: +91 9965523421</span>
+
+             </div>
+         </mat-toolbar> -->
