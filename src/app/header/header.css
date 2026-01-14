@@ -134,7 +134,6 @@
   margin: 0;
   font-family: 'Roboto', sans-serif;  
   padding-top:2px;
-  margin:15px;
 }
 
 .container {
@@ -296,5 +295,5 @@
   background-position: center;
   height: 160px;
   position: relative;
-  width: 98%;
+  width: 100%;
 }

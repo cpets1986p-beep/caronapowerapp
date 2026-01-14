@@ -20,10 +20,10 @@
   text-decoration: underline;
 }
 .body{
-  padding-top:100px;
-  margin:15px;
+  padding-top:2px;
+  margin:5px;
+  width: 100%;
 }
-
 .underline-animate {
   position: relative;
   display: inline-block;
