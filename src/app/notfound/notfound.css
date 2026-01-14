@@ -1,5 +1,5 @@
 .not-found-container {
-  height: 100vh;
+  height: 450px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,4 +32,10 @@
 
 .btn-home:hover {
   background-color: #0056b3;
+}
+
+.body{
+  padding-top:2px;
+  margin:5px;
+  width: 100%;
 }
