@@ -12,7 +12,6 @@ export const routes: Routes = [
     { path: 'header',component: Header },
     { path: 'home', component: Home },
     { path:'overview',component:Overview},
-    { path: 'products', component: Products },
     { path: 'contact', component: Contact },
     { path:'impulse-inductor',component:ImpulseInductor},
     
