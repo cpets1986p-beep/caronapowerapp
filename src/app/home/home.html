@@ -1,8 +1,9 @@
 
-<div  class="body" tabindex="1">
+<div  class="body">
   <section class="ng-container mb-2" >
   <div class="content:object-fit">
-    <app-image-slider></app-image-slider>
+    <!-- <app-image-slider></app-image-slider> -->
+     <app-image-swiper></app-image-swiper>
   </div>
   </section>
   
@@ -20,36 +21,35 @@
   <md-content flex layout-padding>
     <h2 class="hero-text-about"> {{ 'About Us' | capitalizeFirst }} </h2>
       
-    <p class="overview-text">Carona Power Electrical Test Systems is a Bangalore-based engineering firm specializing in
+    <p class="overview-text">Carona Power Electrical Test Systems is a engineering firm specializing in
     <b>High Voltage Impulse Generator service, repair, refurbishment, and spares support.</b>
     With deep industry experience in <b>impulse voltage and current testing systems</b>, Carona
 Power supports customers who depend on reliable operation of <b>high voltage test equipment</b>
-for routine testing, type testing, and R&D applications
+for routine testing, type testing, and R&D applications.
    We at Carona Power Electrical Test Systems have <b>extensive hands-on experience in High
 Voltage Test and Measurement Equipment</b>, gained through years of work with established
 test system manufacturers.
-  The company was formed to address a critical industry need:<b> dependable service, repair, and
-spares support for High Voltage Impulse Generators</b>, especially for systems that are aging,
-unsupported, or require expert intervention.
-</p>
+  The company was formed to address a critical industry needs, especially for systems that are aging,
+unsupported, or require expert intervention.</p>
  </md-content>
     <hr/>
     <div class="overview-text">
       <h2 class="hero-text-about">Core Technical Focus Areas</h2>
       <ul class="overview-text">
-        <li>High Voltage Impulse Voltage Generators</li>
-        <li>High Voltage Impulse Current Generators</li>
-        <li>Wave-shaping Networks and Components</li>
-        <li>Measurement and Performance Verification</li>
+        <li>Servicing of High Voltage Impulse Voltage Generators</li>
+        <li>Servicing of High Voltage Impulse Current Generators</li>
+        <li>Design & Manufacturing of Wave-shaping Resistor, Inductor Networks</li>
+        <li>Performance Verification of HV Source & Measurement System </li>
         <li>Service, Refurbishment of Legacy Systems</li>
-        <li>Upgrade of Existing Test Equipment</li>
-        <li>High Voltage Laboratory Equipment and Grounding Techniques Planning Consultation</li>
+        <li>Upgrade of Existing Impulse Test Equipment</li>
+        <li>High Voltage Laboratory Grounding Techniques</li>
+        <li>HV Laboratory Planning Consultation</li>
+        <li>PD Room Construction</li>
         <li>Training Operators for Routine Testing</li>
         <li>Educating Customer for Best Practises</li>
         </ul>
         <p>Carona Power combines <b>field experience, practical troubleshooting skills, and engineering
-insight</b> to deliver effective and reliable solutions.
-</p>
+insight</b> to deliver effective and reliable solutions.</p>
     </div>
 </section>
 
@@ -57,10 +57,33 @@ insight</b> to deliver effective and reliable solutions.
   <div class="mat-card-header d-flex justify-content-center">
     <div class="text-call">Our Product Highlights</div>
   </div>
-  <div class="highlights-section container my-5">  
+  <div class="highlights-section container my-4">  
   
   <div class="row g-4">
     <div class="col-6 col-md-4 col-lg-3" *ngFor="let product of products">
+      
+      <div class="highlight-card border border-dark">
+        <div class="highlight-img-wrapper">
+          <div class="caption">{{ product.name }}</div>
+          <img [src]="product.image" [alt]="product.name" class="img-fluid" />
+          
+          
+        </div>
+      </div>
+     
+    </div>
+  </div>
+  </div>
+</section>
+
+<section >
+  <div class="mat-card-header d-flex justify-content-center">
+    <div class="text-call">Our Service Highlights</div>
+  </div>
+  <div class="highlights-section container my-4">  
+  
+  <div class="row g-4">
+    <div class="col-6 col-md-4 col-lg-3" *ngFor="let product of serivces">
       
       <div class="highlight-card border border-dark">
         <div class="highlight-img-wrapper">
@@ -90,7 +113,13 @@ insight</b> to deliver effective and reliable solutions.
   <div><img src="/assets/images/cl4.jfif" ></div>
   <div><img src="/assets/images/cl5.jfif" ></div>
   <div><img src="/assets/images/cl6.jfif" ></div>
-  <div><img src="/assets/images/cl3.jpeg" ></div>
+  <div><img src="/assets/images/cl3.jpeg" ></div>  
+  <div><img src="/assets/images/cl1.jfif" ></div>
+  <div><img src="/assets/images/cl2.jfif" ></div>
+  <div><img src="/assets/images/cl4.jfif" ></div>
+  <div><img src="/assets/images/cl5.jfif" ></div>
+  <div><img src="/assets/images/cl6.jfif" ></div>
+  <div><img src="/assets/images/cl3.jpeg" ></div> 
 </div>
 </div>
 <hr/>
@@ -101,7 +130,7 @@ insight</b> to deliver effective and reliable solutions.
 <!-- <div class="container-load">
   <hr/>
 <swiper-container
-    [attr.slides-per-view]="2"
+    [attr.slides-per-view]="1"
     [attr.loop]="true"
     pagination="true"
     pagination-clickable="true"
@@ -110,11 +139,11 @@ insight</b> to deliver effective and reliable solutions.
     autoplay-disable-on-interaction="false"
     >
 
-    <swiper-slide *ngFor="let img of imagesclnts">
+    <swiper-slide *ngFor="let img of images">
       
       <div class="text-call">
-      <span>
-     <img [src]="img">
+      <span >
+     <img [src]="img" style="width:100%;height:450px;object-fit:cover">
      </span>
     </div>     
   </swiper-slide>

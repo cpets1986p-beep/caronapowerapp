@@ -7,7 +7,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterLinkActive,CommonModule,RouterLink, CapitalizeFirstPipe],
+  imports: [RouterLinkActive,CommonModule,RouterLink],
   templateUrl: './header.html',
   styleUrls: ['./header.css'],
 })
@@ -17,6 +17,9 @@ export class Header {
   @HostListener('window:scroll', [])
   onWindowScroll() {
     this.isScrolled = window.scrollY > 10; // threshold for shadow + blur
+    // const offset = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    // this.isScrolled = offset > 20; // threshold in pixels
+
   }
 
 

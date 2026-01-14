@@ -5,7 +5,7 @@
 
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
+html, body { height: 100%;margin:0;padding: 0; }
 body { color: #014164; margin: 0; font-family: 'Roboto', sans-serif; }
 
 
@@ -36,3 +36,11 @@ mat-nav-list.list-horizontal {
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* styles.css */
+.swiper .swiper-button-next svg, .swiper .swiper-button-prev svg {
+  fill: #05a828; 
+}
+.swiper .swiper-button-prev {
+  color: #05a828; 
+}

@@ -1,11 +1,11 @@
-<div class="slider-wrapper">
+<div class="slider-wrapper" (mouseenter)="nextSlide()"
+(mouseleave)="prevSlide()">
   <div class="slide" *ngFor="let slide of slides; let i = index" [class.active]="i === currentSlide">
     <div class="slide-bg" [ngStyle]="{'background-image': 'url(' + slide.image + ')'}">
       <div class="slide-content text-center text-white">
         <h1>{{ slide.title }}</h1>
         <h2>{{ slide.subtitle }}</h2>
-        <a [routerLink]="slide.link" class="btn btn-warning mt-3">Learn More</a>
-        
+        <a [routerLink]="slide.link" class="btn btn-warning mt-3">Learn More</a>        
       </div>
       
     </div>
@@ -25,3 +25,5 @@
 
 </div>
   <!-- Dot Indicators -->
+
+  

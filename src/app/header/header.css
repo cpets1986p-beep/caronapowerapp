@@ -133,6 +133,8 @@
 .body {
   margin: 0;
   font-family: 'Roboto', sans-serif;  
+  padding-top:2px;
+  margin:15px;
 }
 
 .container {
@@ -228,6 +230,7 @@
 .navbar .navbar-brand img,
 .navbar .navbar-brand span {
   transition: transform 0.3s ease, font-size 0.3s ease;
+  font-size: x-large;
 }
 
 .navbar.scrolled .navbar-brand img {
@@ -235,21 +238,27 @@
 }
 
 .navbar.scrolled .navbar-brand span {
-  font-size: 1.2em; /* shrink text */
+  font-size: 0.9em; /* shrink text */
 }
 .navbar {
   transition: box-shadow 0.4s ease-in-out,
               backdrop-filter 0.4s ease-in-out,
               background-color 0.6s ease-in-out;
   background-color: rgba(0, 51, 102, 0.9); /* Dark blue base */
-  min-height: 90px; /* Broader/taller navbar */
+  min-height: 30px; /* Broader/taller navbar */
 }
 
+.navbar .navbar-brand a{
+  background-color: white;
+}
 .navbar.scrolled {
   box-shadow: 0 4px 12px rgba(0,0,0,0.25);
   backdrop-filter: blur(6px);
   background-color: rgba(0, 30, 80, 0.95); /* Darker blue when scrolled */
+  
 }
+
+
 .navbar .nav-link,
 .navbar .navbar-brand span {
   color: #ffffff !important;   /* force white text */
@@ -263,7 +272,7 @@
 /* Base dropdown hidden state */
 .nav-item.dropdown:hover .dropdown-menu {
   display: block;
-  margin-top: 0;
+  margin-top: 10;
 }
 
 .nav-link.active,
@@ -273,6 +282,19 @@
   background-color: #003366;   /* dark blue highlight */
 }
 
+.dropdown-item:hover {
+  background-color: #7cbef5;
+  color: white;
+}
+
 .navbar-nav .nav-item {
   margin: 0 15px; /* adjust spacing */
+}
+
+.slide-bg{
+  background-size: cover;
+  background-position: center;
+  height: 160px;
+  position: relative;
+  width: 98%;
 }

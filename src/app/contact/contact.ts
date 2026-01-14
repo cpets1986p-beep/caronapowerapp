@@ -28,10 +28,10 @@ export class Contact {
     };
     console.log(templateParams);
     emailjs.send(
-      'service_mnc4ij6',
-      'template_0z0nurf',
+      'service_tdbv10d',
+      'template_7ht19v9',
       templateParams,
-      { publicKey: 'jjWyxY01DKy4A5TOS' }
+      { publicKey: 'La044h23layKjOObp' }
     ).then(
       () => {
        const toast = new bootstrap.Toast(this.toastRef.nativeElement);

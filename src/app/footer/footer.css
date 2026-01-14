@@ -50,3 +50,11 @@
   padding: 10px 0;
   background-color: #014164; /* dark blue */
 }
+
+.mr-4.ml-4 a span {
+  text-decoration: none;
+}
+
+.no-underline {
+  text-decoration: none;
+}

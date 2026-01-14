@@ -1,0 +1,30 @@
+<!-- Swiper CSS -->
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+
+<swiper-container id="swc_slide"
+  [attr.slides-per-view]="1"
+  [attr.loop]="true"
+  pagination="true"
+  navigation="true"
+  autoplay-delay="3000"
+  autoplay-disable-on-interaction="false"
+>
+  <swiper-slide *ngFor="let img of slides">
+    <div class="slide-bg"
+         [ngStyle]="{'background-image': 'url(' + img.image + ')'}">
+      <div class="slide-content text-center text-white">
+        <h1>{{ img.title }}</h1>
+        <h2>{{ img.subtitle }}</h2>
+        <!-- Learn More button -->
+        <a [routerLink]="img.link" class="btn btn-warning mt-3">
+          Learn More
+        </a>
+      </div>
+    </div>
+  </swiper-slide>
+</swiper-container>
+
+<router-outlet></router-outlet>

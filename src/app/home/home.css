@@ -190,11 +190,11 @@ mat-card {
   color: #f8f9fa;
   padding: 10px;
   text-align: center;
-  width: 90%;
+  width: 98%;
 }
 
 .background-container {
-  height: 30vh; /* Sets height to full viewport height */
+  height: 20%; /* Sets height to full viewport height */
   background-image: url('/assets/images/bg2.jfif'); /* Adjust path as needed */
   background-size: cover; /* Ensures the image covers the entire area */
   background-position: center; /* Centers the image */
@@ -217,7 +217,7 @@ mat-card {
   margin: 10px;
 }
 .body{
-  padding-top:100px;
+  padding-top:2px;
   margin:15px;
 }
 
@@ -285,7 +285,7 @@ mat-card {
     .marquee-content {
       display: flex;
       width: max-content;
-      animation: scroll 20s linear infinite;
+      animation: scroll 25s linear infinite;
     }
 
     .marquee-content img {
@@ -298,12 +298,27 @@ mat-card {
       transform: scale(1.1);
     }
 
+    /* Pause animation on hover */
+.marquee:hover .marquee-content {
+  animation-play-state: paused;
+}
+
+
     @keyframes scroll {
-      from {
-        transform: translateX(0);
-      }
-      to {
-        transform: translateX(-50%);
-      }
-    }
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%); /* move half the width (because we duplicated content) */
+  }
+}
+.highlight-img-wrapper{
+  width: 250px;
+  height: 220px;
+}
+
+
+
+
+
 

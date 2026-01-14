@@ -1,14 +1,23 @@
 
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top"
-     [ngClass]="{ 'scrolled': isScrolled }">
-  <div class="container-fluid">
+
+<div class="body">
+
+
+<div class=" width-99 p-0 m-0">
+<div class="slide-bg" [ngStyle]="{'background-image': 'url(assets/images/bg_logo.jpg)'}">
+</div>
+</div>
+<div class="row width-99 m-0 p-0">
+<nav class="navbar navbar-expand-lg navbar-dark text-align-center"
+     [ngClass]="{ 'scrolled': isScrolled ,'fixed-top':isScrolled}">
+  <div class="col-md-10 container-fluid">
     <!-- Logo -->
-    <a class="navbar-brand d-flex align-items-center" href="#">
+    <!-- <a class="navbar-brand d-flex align-items-center" href="#">
       <img src="assets/images/Carona_Logo.jpeg" alt="Carona Power" width="70" class="me-2">
       <span class="fw-bold text-white">
         {{ 'Carona Power Electrical Test Systems' | capitalizeFirst }}
       </span>
-    </a>
+    </a> -->
 
     <!-- Toggler -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
@@ -42,8 +51,10 @@
             Services
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" routerLinkActive="active" routerLink="['/services/repair']">Repair</a></li>
-            <li><a class="dropdown-item" routerLinkActive="active" routerLink="['/services/hv']">HV Laboratory Planning</a></li>
+            <li><a class="dropdown-item" routerLinkActive="active" routerLink="['/services/hv']">HV System Maintenance</a></li>
+            <li><a class="dropdown-item" routerLinkActive="active" routerLink="['/services/repair']">Troubleshooting & Repair</a></li>
+            <li><a class="dropdown-item" routerLinkActive="active" routerLink="['/services/hvp']">HV Laboratory Planning</a></li>
+            <li><a class="dropdown-item" routerLinkActive="active" routerLink="['/services/hvg']">HV Laboratory Grounding System Design</a></li>
           </ul>
         </li>
 
@@ -52,6 +63,8 @@
     </div>
   </div>
 </nav>
+</div>
+</div>
 
 <!-- <div class="flex flex-nowrap">
 <mat-toolbar class="mat-card-logo">
