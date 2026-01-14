@@ -87,9 +87,9 @@
   gap: 20px;
 }
 .body{
-  padding-top:100px;
+  padding-top:2px;
   margin:15px;
-} 
+}
 .background-container {
   height: 20%; /* Sets height to full viewport height */
   background-image: url('/assets/images/bg2.jfif'); /* Adjust path as needed */
