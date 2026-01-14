@@ -35,9 +35,15 @@ export class ImageSwiper {
       image: '/assets/images/resistorImp.jfif',
       title: 'High Voltage Impulse Resistors',
       subtitle: 'Custom Built',
-      link: '/products'
+      link: '/impulse-resistor'
     }
     ,
+    {
+      image: '/assets/images/ind2.jfif',
+      title: 'High Voltage Impulse Inductors',
+      subtitle: 'Custom Built',
+      link: '/impulse-inductor'
+    },
     {
       image: '/assets/images/prd11.jfif',
       title: 'Custom HV Lab Design',

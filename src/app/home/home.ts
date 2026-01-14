@@ -42,17 +42,17 @@ export class Home {
    ]
    
   products = [
-    { name: 'Impulse Resistors', image: '/assets/images/prd1.jfif' },
-    { name: 'Impulse Inductors', image: '/assets/images/prd2.jfif' },
-    { name: 'Impulse Generator Spares', image: '/assets/images/prd3.jfif' },
-    { name: 'PD Rooms', image: '/assets/images/prd4.jfif' }
+    { name: 'Impulse Resistors', image: '/assets/images/impr1.jfif' },
+    { name: 'Impulse Inductors', image: '/assets/images/ind1.jfif' },
+    { name: 'Impulse Generator Spares', image: '/assets/images/impg.jfif' },
+    { name: 'PD Rooms', image: '/assets/images/pdroom.jfif' }
   ];
 
   serivces = [
-    {name:'HV System Maintenance',image: '/assets/images/prd1.jfif'},
-    { name: 'Troubleshooting & Repair', image: '/assets/images/prd1.jfif' },
-    { name: 'HV Laboratory Planning', image: '/assets/images/prd2.jfif' },
-    { name: 'HV Laboratory Grounding System Design', image: '/assets/images/prd2.jfif' },
+    {name:'HV System Maintenance',image: '/assets/images/hvm.jfif'},
+    { name: 'Troubleshooting & Repair', image: '/assets/images/trr.jfif' },
+    { name: 'HV Laboratory Planning', image: '/assets/images/HV1.jfif' },
+    { name: 'HV Laboratory Grounding System Design', image: '/assets/images/grd.jfif' },
     
   ];
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {

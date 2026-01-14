@@ -278,12 +278,21 @@
 .dropdown-item.active {
   color: #ffffff !important;   /* white text */
   font-weight: 700;            /* bold */
-  background-color: #003366;   /* dark blue highlight */
+  background-color: #003366;   /* dark blue highlight */  
+  
 }
-
+.dropdown-item {
+  text-wrap: inherit;
+  border: 0px solid #ccc;   /* light gray border */
+  padding: 8px;             /* optional: adds spacing inside */
+  margin: 2px 0;            /* optional: separates items slightly */
+  width: 200px;          /* fixed width for consistency */
+  background-color: #edf1f5;
+}
 .dropdown-item:hover {
   background-color: #7cbef5;
   color: white;
+  
 }
 
 .navbar-nav .nav-item {
