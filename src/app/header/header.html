@@ -1,23 +1,22 @@
 
 
-<div class="body">
+<div class="container-fluid p-0 m-0">
 
 
-<div class="p-0 m-0">
+<!-- <div class="p-0 m-0">
 <div class="slide-bg" [ngStyle]="{'background-image': 'url(assets/images/bg_logo.jpg)'}">
 </div>
-</div>
-<div class="row m-0 p-0">
-<nav class="navbar navbar-expand-lg navbar-dark text-align-center"
+</div> -->
+<nav class="navbar navbar-expand-lg navbar-dark"
      [ngClass]="{ 'scrolled': isScrolled ,'fixed-top':isScrolled}">
-  <div class="col-md-10 container-fluid">
+ 
     <!-- Logo -->
-    <!-- <a class="navbar-brand d-flex align-items-center" href="#">
+    <a class="navbar-brand d-flex align-items-center" href="#">
       <img src="assets/images/Carona_Logo.jpeg" alt="Carona Power" width="70" class="me-2">
       <span class="fw-bold text-white">
         {{ 'Carona Power Electrical Test Systems' | capitalizeFirst }}
       </span>
-    </a> -->
+    </a>
 
     <!-- Toggler -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
@@ -61,9 +60,8 @@
         <li class="nav-item mx-3"><a class="nav-link" [routerLink]="['contact']" routerLinkActive="active">Contact Us</a></li>
       </ul>
     </div>
-  </div>
+  
 </nav>
-</div>
 </div>
 
 <!-- <div class="flex flex-nowrap">

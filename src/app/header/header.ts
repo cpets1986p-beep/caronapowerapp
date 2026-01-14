@@ -7,7 +7,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterLinkActive,CommonModule,RouterLink],
+  imports: [RouterLinkActive,CommonModule,RouterLink,CapitalizeFirstPipe],
   templateUrl: './header.html',
   styleUrls: ['./header.css'],
 })
