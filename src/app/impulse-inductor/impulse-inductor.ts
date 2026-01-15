@@ -11,7 +11,7 @@ img=[
     '/assets/images/resistor.jpg'
   ]
   imgr=[
-    '/assets/images/prd3.jpg'
+    '/assets/images/ind3.jfif'
   ]
   images=[
     '/assets/images/prd1.jfif',

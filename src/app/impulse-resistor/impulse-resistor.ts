@@ -13,6 +13,9 @@ img=[
   imgr=[
     '/assets/images/pr12.jfif'
   ]
+  imga=[
+    '/assets/images/resapp.jfif'
+  ]
   imgpr=[
     '/assets/images/impr.jfif'
   ]

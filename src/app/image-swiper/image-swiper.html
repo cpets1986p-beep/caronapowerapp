@@ -11,8 +11,9 @@
   navigation="true"
   autoplay-delay="3000"
   autoplay-disable-on-interaction="false"
+  pause-on-mouse-enter="true"
 >
-  <swiper-slide *ngFor="let img of slides">
+  <swiper-slide id="swc_slide" *ngFor="let img of slides">
     <div class="slide-bg"
          [ngStyle]="{'background-image': 'url(' + img.image + ')'}">
       <div class="slide-content text-center text-white">
