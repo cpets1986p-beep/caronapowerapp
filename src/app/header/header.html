@@ -11,7 +11,7 @@
      [ngClass]="{ 'scrolled': isScrolled ,'fixed-top':isScrolled}">
  
     <!-- Logo -->
-    <a class="navbar-brand d-flex align-items-center p-1 m-0" href="#">
+    <a class="navbar-brand d-flex align-items-center p-1 m-0" [routerLink]="['home']">
       <img src="assets/images/Carona_Logo.jpeg" alt="Carona Power" width="70" class="me-2">
       <span class="fw-bold text-white">
         {{ 'Carona Power Electrical Test Systems' | capitalizeFirst }}
@@ -26,12 +26,12 @@
     <!-- Nav Links -->
     <div class="collapse navbar-collapse" id="navbarContent">
       <ul class="navbar-nav ms-auto mb-3 mb-lg-0">
-        <li class="nav-item mx-3"><a class="nav-link" [routerLink]="['home']" routerLinkActive="active">Home</a></li>
-        <li class="nav-item mx-3"><a class="nav-link" [routerLink]="['overview']" routerLinkActive="active">Overview</a></li>
+        <li class="nav-item mx-3"><a class="nav-link underline-animate" [routerLink]="['home']" routerLinkActive="active">Home</a></li>
+        <li class="nav-item mx-3"><a class="nav-link underline-animate" [routerLink]="['overview']" routerLinkActive="active">Overview</a></li>
 
         <!-- Products Dropdown -->
-       <li class="nav-item dropdown">
-  <a class="nav-link mx-3 dropdown-toggle"  [routerLink]="['/products']" routerLinkActive="active"
+       <li class="nav-item mx-3 dropdown">
+  <a class="nav-link  dropdown-toggle"  routerLinkActive="active"
  id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" [routerLinkActiveOptions]="{ exact: false }">
     Products
   </a>
@@ -46,7 +46,7 @@
 
         <!-- Services Dropdown -->
         <li class="nav-item dropdown mx-3">
-          <a class="nav-link dropdown-toggle" [routerLink]="['/services']" id="servicesDropdown" aria-expanded="false" role="button" data-bs-toggle="dropdown" [routerLinkActiveOptions]="{ exact: false }" routerLinkActive="active">
+          <a class="nav-link dropdown-toggle"  id="servicesDropdown" aria-expanded="false" role="button" data-bs-toggle="dropdown" [routerLinkActiveOptions]="{ exact: false }" routerLinkActive="active">
             Services
           </a>
           <ul class="dropdown-menu">
@@ -57,7 +57,7 @@
           </ul>
         </li>
 
-        <li class="nav-item mx-3"><a class="nav-link" [routerLink]="['contact']" routerLinkActive="active">Contact Us</a></li>
+        <li class="nav-item mx-3"><a class="nav-link underline-animate" [routerLink]="['contact']" routerLinkActive="active">Contact Us</a></li>
       </ul>
     </div>
   
